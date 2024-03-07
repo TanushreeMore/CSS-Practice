@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOR SWITH</title>
+    
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css"> <!-- external CSS -->
+    <script src="script.js"></script> <!-- external JS -->
+
+</head>
+<body>
+    <div class="color-switcher">
+        <div class="switcher-btn">
+            <i class="fa-solid fa-gear"></i>
+        </div>
+        
+        <h3>select color</h3>
+
+        <div class="theme-buttons-container">
+            <span class="theme-buttons" data-color="#8e44ad" style="background: #8e44ad;"></span>
+            <span class="theme-buttons" data-color="#2980b9" style="background: #2980b9;"></span>
+            <span class="theme-buttons" data-color="#f39c12" style="background: #f39c12;"></span>
+            <span class="theme-buttons" data-color="#27ae60" style="background: #27ae60;"></span>
+            <span class="theme-buttons" data-color="#e74c3c" style="background: #e74c3c;"></span>
+            <span class="theme-buttons" data-color="#e84393" style="background: #e84393;"></span>
+            <span class="theme-buttons" data-color="#ff4757" style="background: #ff4757;"></span>
+            <span class="theme-buttons" data-color="#ffc312" style="background: #ffc312;"></span>
+            <span class="theme-buttons" data-color="#17c0eb" style="background: #17c0eb;"></span>
+        </div>
+    </div>
+    <div class="container">
+        <h1>COLOR SWITH</h1>
+    </div>
+
+     <!-- external JS -->
+    <!-- <script> 
+        document.querySelector('.switcher-btn').onclick = () => {
+            document.querySelector('.color-switcher').classList.toggle('active');
+        };
+
+        let themeButtons = document.querySelectorAll('.theme-buttons');
+
+        themeButtons.forEach(color => {
+
+            color.addEventListener('click', () => {
+                let dataColor = color.getAttribute('data-color');
+                document.querySelector(':root').style.setProperty('--main-color', dataColor)
+            });
+        });
+    </script> -->
+</body>
+</html>
